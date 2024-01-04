@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url("green\ texture\ bg.jpg");
+    object-fit: cover;
+    height: 91vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.nav-item {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-item:hover {
+    color: #ff9900;
+}
+
+.content {
+    margin-top: 60px; /* Adjust this value to leave space for the fixed navbar */
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.content p{
+    width: 40vw;
+}
+
+.content .btn{
+    background-color: rgb(86, 86, 252);
+    color: white;
+    border-radius: 7px;
+    padding: 5px 8px;
+    cursor: pointer;
+    border: 1px solid white;
+    margin-top: 23px;
+}
+
+.content .btn:hover{
+    background-color: rgb(31, 31, 158);
+}
+
+/* Change navbar background color on scroll */
+.navbar.scrolled {
+    background-color: #111;
+}
